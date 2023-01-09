@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - main
+  workflow_dispatch:
 
 env:
   UNIQUE_APP_NAME: ${{ secrets.UNIQUE_APP_NAME }}
