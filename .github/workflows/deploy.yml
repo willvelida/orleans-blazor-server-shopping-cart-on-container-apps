@@ -6,10 +6,10 @@ on:
     - main
 
 env:
-  UNIQUE_APP_NAME: orleanscart
-  SILO_IMAGE_NAME: orleanscart-silo
-  AZURE_RESOURCE_GROUP_NAME: orleans-resourcegroup
-  AZURE_RESOURCE_GROUP_LOCATION: eastus
+  UNIQUE_APP_NAME: ${{ secrets.UNIQUE_APP_NAME }}
+  SILO_IMAGE_NAME: ${{ secrets.SILO_IMAGE_NAME }}
+  AZURE_RESOURCE_GROUP_NAME: ${{ secrets.AZURE_RESOURCE_GROUP_NAME }}
+  AZURE_RESOURCE_GROUP_LOCATION: ${{ secrets.AZURE_RESOURCE_GROUP_LOCATION }}
 
 jobs:
   build-and-deploy:
